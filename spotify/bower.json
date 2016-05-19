@@ -1,0 +1,17 @@
+{
+  "name": "spotify",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/chris-parker/fizzbuzz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-spotify": "^1.4.0"
+  }
+}

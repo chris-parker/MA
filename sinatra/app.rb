@@ -5,18 +5,17 @@ get '/' do
   "hello!"
 end
 
-get '/secret' do
-  "how very secretive"
-end
-
-get '/cat' do
+get '/random-cat' do
+  @catname = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
 
-get '/cheese' do
-  "if you don't like cheese you should leave right now"
+post '/named-cat' do
+  print params
+  @catname = params[:name]
+  erb(:index)
 end
 
-get '/baseball' do
-  "based ball"
+get '/form' do
+  erb(:form)
 end
